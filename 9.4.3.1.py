@@ -1,10 +1,5 @@
-def par():
-    string = str(input("nn"))
-    print("1",string)
-    string = string.split()
-    print("2",string)
+def par(string):
     li = []
-    print("3",li)
     for i in string:
         print("4",li)
         print("5",i)
@@ -19,5 +14,8 @@ def par():
             print("7",li)
     return len(li) == 0
 
-
-print("8",par())
+print("8",par("( )"))
+print("8",par(") ("))
+print("8",par("( ) ( { )"))
+print("8",par("( ) ) { ("))
+print("8",par("( ) ( { ) ) ("))
