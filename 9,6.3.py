@@ -80,10 +80,33 @@ class LinkedList:
             self.last = pointer  #чтобы предпоследний стал последним
             return node  #возвращаем сохраненный
 
+    # добавили итератор
+    def __iter__(self):
+        self.current = self.first # в текущий элемент помещаем первый
+        return self # возвращаем итератор
+
+    # метод перехода
+    def __next__(self):
+        if self.current is None:
+            # если текущ элемент стал последним, вызыв исключ
+            raise StopIteration
+        else:
+            node = self.current  # сохраняем текущий элемент
+            self.current = self.current.next # совершаем пенреход
+            return node  #  возвращаем сохраненный
+
+    # возвращаем размер структуры данных
+    def __len__(self):
+        count = 0
+        pointer = self.first
+        while pointer is not None:
+            count += 1
+            pointer = pointer.next
+
+        return count
 LL = LinkedList()
 
 LL.pushright(1)
-#print(LL)
 LL.pushleft(2)
 print(LL)
 LL.pushright(3)
@@ -97,3 +120,4 @@ print(LL)
 LL.popleft()
 
 print(LL)
+print(LL.__len__())
