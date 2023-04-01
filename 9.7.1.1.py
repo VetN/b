@@ -15,7 +15,7 @@ def binary_search(array, element, left, right):
     else:
         return binary_search(array, element, middle+1, right)
 
-element = int(input())
+element = int(input("введите element:"))
 array = [i for i in range(1, 100)]
 
-print(binary_search(array, element, 0,99))
+print("ответ:", binary_search(array, element, 0,99))
