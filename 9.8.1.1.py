@@ -11,3 +11,4 @@ while a != f + 1:
 
 print(factorial)
 print(count)
+print(len(str(factorial)))
