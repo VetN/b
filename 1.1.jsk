@@ -1,0 +1,86 @@
+a = 3;
+console.log(a);
+console.log("Привет");
+b = a + 5;
+console.log(b);
+let sum = a + b;
+let c = 10;
+// проверка связи
+
+undefined
+console.log(typeof c);
+let xz = `c ${ sum }`
+console.log(xz)
+
+console.log(1 || 0);
+undefined
+1
+
+console.log(1 && 0);
+0
+undefined
+
+
+// условный оператор if-else
+let bankBalance = 15000;
+let price = 9999;
+if (price <= bankBalance) {
+    console.log('покупка одобрена')
+} else if (price<10000) {
+    console.log('пополните баланс')
+} else {
+    console.log('идите лесом')
+}
+
+// оператор switch
+const k = 1;
+const p = 2;
+const result = k + p;
+if (result === 0) {
+    console.log('res=0')
+} else if (result === 1) {
+    console.log('res=1')
+} 
+else if (result === 3) {
+    console.log('res=3')
+} else {
+    console.log('не смог посчитать')
+} 
+// заменяем на switch
+const l = 1;
+const o = 2;
+const result_1 = l + o;
+switch (result_1) {
+    case 0:
+        console.log('res=0');
+        break;
+    case 1:
+        console.log('res=1');
+        break;
+    case 3:
+         console.log('res=3');
+        break;
+    default:
+        console.log('не смог посчитать')
+}
+
+// тернарный оператор
+const f = 1;
+const w = 2;
+const result_2 = f + w;
+if (result_2 < 4) {
+    console.log('result_2 < 4')
+} else {
+    result_2 >= 4
+}
+// меняем на тернарный оператор
+const fo = 1;
+const wo = 2;
+const result_3 = fo + wo;
+let result_4 = result_3 < 4 ? console.log('res < 4') : console.log('ouy');
+
+// еще пример тренарного оператора
+
+const xox = 1;
+const res_xox = xox ? true : false;
+console.log(res_xox)
